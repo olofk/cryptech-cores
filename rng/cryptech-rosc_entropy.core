@@ -1,0 +1,12 @@
+CAPI=1
+[main]
+simulators = icarus
+[verilog]
+src_files =
+ src/rtl/rosc_entropy.v
+ src/rtl/rosc_entropy_core.v
+ src/rtl/rosc.v
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/rng/rosc_entropy.git

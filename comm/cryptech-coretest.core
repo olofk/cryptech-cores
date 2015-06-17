@@ -1,0 +1,18 @@
+CAPI=1
+[main]
+
+simulators = icarus
+
+[verilog]
+src_files =
+ src/rtl/coretest.v
+
+tb_private_src_files =
+ src/tb/tb_coretest.v
+
+[simulator]
+toplevel = tb_coretest
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/comm/coretest.git

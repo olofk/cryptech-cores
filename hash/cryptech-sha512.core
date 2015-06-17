@@ -1,0 +1,18 @@
+CAPI=1
+
+[main]
+
+[verilog]
+src_files =
+ src/rtl/sha512_core.v
+ src/rtl/sha512_h_constants.v
+ src/rtl/sha512_k_constants.v
+ src/rtl/sha512_w_mem.v
+ src/rtl/sha512.v
+tb_private_src_files =
+ src/tb/tb_sha512_core.v
+ src/tb/tb_sha512.v
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/hash/sha512.git

@@ -1,0 +1,17 @@
+CAPI=1
+
+[main]
+
+[verilog]
+src_files =
+ src/rtl/sha1.v
+ src/rtl/sha1_w_mem.v
+ src/rtl/sha1_core.v
+tb_private_src_files =
+ src/tb/tb_sha1_w_mem.v
+ src/tb/tb_sha1_core.v
+ src/tb/tb_sha1.v
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/hash/sha1.git

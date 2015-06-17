@@ -1,0 +1,11 @@
+CAPI=1
+[main]
+
+[verilog]
+src_files =
+ src/rtl/avalanche_entropy.v
+ src/rtl/avalanche_entropy_core.v
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/rng/avalanche_entropy.git

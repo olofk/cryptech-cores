@@ -1,0 +1,19 @@
+CAPI=1
+[main]
+
+simulators = icarus
+
+[verilog]
+src_files =
+ src/rtl/uart_regs.v
+ src/rtl/uart_core.v
+
+tb_private_src_files =
+ src/tb/tb_uart.v
+
+[simulator]
+toplevel = tb_uart
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/comm/uart.git

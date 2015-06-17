@@ -1,0 +1,15 @@
+CAPI=1
+[main]
+
+[verilog]
+src_files =
+ src/rtl/chacha.v
+ src/rtl/chacha_qr.v
+ src/rtl/chacha_core.v
+tb_private_src_files =
+ src/tb/tb_chacha_core.v
+ src/tb/tb_chacha.v
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/cipher/chacha.git

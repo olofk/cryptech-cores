@@ -1,0 +1,18 @@
+CAPI=1
+
+[main]
+
+[verilog]
+src_files =
+ src/rtl/sha256.v
+ src/rtl/sha256_w_mem.v
+ src/rtl/sha256_k_constants.v
+ src/rtl/sha256_core.v
+tb_private_src_files =
+ src/tb/tb_sha256_w_mem.v
+ src/tb/tb_sha256_core.v
+ src/tb/tb_sha256.v
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/hash/sha256.git

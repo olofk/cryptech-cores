@@ -1,0 +1,22 @@
+CAPI=1
+
+[main]
+
+[verilog]
+src_files =
+ src/rtl/trng.v
+ src/rtl/trng_mixer.v
+ src/rtl/trng_csprng_fifo.v
+ src/rtl/trng_csprng.v
+tb_private_src_files =
+ src/tb/tb_csprng_fifo.v
+ src/tb/tb_csprng.v
+ src/tb/fake_modules/rosc_entropy.v
+ src/tb/fake_modules/pseudo_entropy.v
+ src/tb/fake_modules/avalanche_entropy.v
+ src/tb/tb_mixer.v
+ src/tb/tb_trng.v
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/rng/trng.git

@@ -1,0 +1,25 @@
+CAPI=1
+[main]
+
+depend =
+ cryptech-aes
+ cryptech-avalanche_entropy
+ cryptech-chacha
+ cryptech-common
+ cryptech-coretest
+ cryptech-modexp
+ cryptech-rosc_entropy
+ cryptech-sha1
+ cryptech-sha256
+ cryptech-sha512
+ cryptech-trng
+ cryptech-uart
+
+[verilog]
+src_files =
+ terasic_regs.v
+ terasic_top.v
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/platform/terasic_c5g.git

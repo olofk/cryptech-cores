@@ -1,0 +1,15 @@
+CAPI=1
+[main]
+
+[verilog]
+src_files =
+ core_selector/src/rtl/rng_selector.v
+ core_selector/src/rtl/core_selector.v
+ core_selector/src/rtl/cipher_selector.v
+ core_selector/src/rtl/hash_selector.v
+ core_selector/src/rtl/math_selector.v
+ core_selector/src/rtl/global_selector.v
+
+[provider]
+name=git
+repo=https://git.cryptech.is/core/platform/common.git
